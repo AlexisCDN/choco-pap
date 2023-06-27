@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+a:visited {
+
+    color: inherit;
+    
+}
+
+.Header {
+
+    min-width: 100%;
+    position: relative;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#473131, #1F1615);
+    box-shadow: 0px 2px 20px 30px #1F1615;
+    
+}
+#Logo {
+
+    width: 5rem;
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.Nav {
+
+    display: flex;
+    font-family: Fjalla one;
+    color: white;
+    font-size: 2rem;
+    margin-left: 80rem;
+    margin-top: 2rem;
+    
+}
+
+.Nav li {
+
+    margin-left: 4rem;
+}
+
+.Nav li:hover {
+
+    color: #FFD543;
+}
+
+#Cart {
+
+    margin-left: 7rem;
+}
+
+
+@media screen and (max-width:500px) {
+
+    .Nav {
+
+        flex-direction: column;
+    }
+    
+}

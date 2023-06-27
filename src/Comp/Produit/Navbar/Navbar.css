@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+a:visited {
+
+    color: inherit;
+    
+}
+
+.Header {
+
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#473131, #1F1615);
+    box-shadow: 0px 2px 20px 30px #1F1615;
+    
+}
+#Logo {
+
+    width: 5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.Nav {
+
+    display: flex;
+    font-family: Fjalla one;
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: 2rem;
+
+}
+.Nav li {
+
+    margin-left: 4rem;
+    position: relative;
+}
+
+.Nav li:hover {
+
+    color: #FFD543;
+}
+
+.Nav li::after {
+
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin:center;
+    background: #FFD543;
+    transition: transform 0.3s ease-out;
+}
+
+.Nav li:hover::after {
+
+    transform: scaleX(1);
+}
+
+#Cart {
+
+    margin-left: 7rem;
+}
+
+
+.Hamburger {
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: none;
+    display: none;
+}
+
+.Hamburger span {
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #fafafa;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s 0.15s ease-out
+}
+
+.Hamburger span:nth-child(1),
+.Hamburger span:nth-child(3) {
+
+    transition: transform 0.3s ease-out;
+}
+
+.Hamburger span:nth-child(1) {
+
+    transform: translateY(8px);
+
+}
+
+.Hamburger span:nth-child(3) {
+
+    transform: translateY(-8px);
+}
+
+.Hamburger.open span:nth-child(1) {
+
+    transform: translate(0) rotate(135deg);
+}
+
+.Hamburger.open span:nth-child(2) {
+
+    opacity: 0;
+    transition: opacity 0s ease-out;
+}
+
+.Hamburger.open span:nth-child(3) {
+
+    transform: translate(0) rotate(-135deg);
+}
+
+@media screen and (max-width:500px) {
+
+
+    #Logo {
+
+        position: absolute;
+    }
+    .Nav{
+        
+        margin: 0;
+        flex-direction: column;
+        background: linear-gradient(#1F1615,#473131 );
+        margin-top: 25rem;
+        height: 15rem;
+        width:100%;
+        box-shadow: 10px -5px 15px 25px #1F1615;
+        z-index: 20;
+    
+
+    }
+
+    .Nav li:nth-child(1) {
+
+        margin-top: 2rem;
+    }
+    
+    .Nav li {
+
+        margin: 0;
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+    
+    
+    }
+
+    .Nav li::after,
+    .Nav li:hover::after {
+
+        display: none;
+    }
+
+    #Cart {
+
+        
+    }
+    .Hamburger {
+
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 3rem;
+        cursor: pointer;
+    }
+}

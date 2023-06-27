@@ -1,0 +1,252 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+
+    font-family: fjalla one;
+    font-size: 5rem;
+    color: #FFD543;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    letter-spacing: 0.5rem;
+    text-shadow:
+        0 0 15px #414141,
+        0 0 30px rgb(51, 49, 49),
+        0 0 50px #362f2f,
+        0 0 80px #362c2c,
+        0 0 120px #2C1E1E;
+
+}
+.Boutique {
+
+    position: relative;
+    margin-top: 8rem;
+    display: flex;
+
+}
+
+
+img {
+
+    width: 15rem;
+
+
+}
+
+.Produits {
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 70%;
+    align-items: flex-start;
+    font-family: Raleway;
+    margin-left: 5rem;
+
+}
+
+.Produits ul {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    
+}
+
+.Produits ul li:nth-child(2) {
+
+    margin-top: 1rem;
+}
+
+.Desc {
+
+    display: flex;
+    
+}
+
+.Filtre {
+
+    width: 20rem;
+    height: 40rem;
+    background-color: #b4b4b4;
+    color: #2C1E1E;
+    border: #2C1E1E 0.125em solid;
+    padding: 0.25em 1em;
+    box-shadow: inset 0 0 2em 0 #2C1E1E, 0 0 2em 0 #2C1E1E;
+    position: relative;
+    margin-left: 0.04rem;
+}
+    
+.Filtre h2 {
+
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-family: fjalla one;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+
+.Options {
+
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.Options h5 {
+
+    
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-family: fjalla one;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    
+}
+
+.Categories{ 
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Categories label {
+
+    font-family: Raleway;
+
+}
+
+.Categories input {
+
+    margin-right: 0.5rem;
+    border: #2C1E1E 0.125em solid;
+    box-shadow:0 0 1em 0 #2C1E1E;
+    cursor: pointer;
+}
+
+.Produits button {
+
+    margin-top: 1rem;
+    width: 10rem;
+    padding: 1rem 0.5rem;
+    font-family: fjalla one;
+    font-size: 1rem;
+    text-shadow:
+        0 0 5px #2C1E1E;
+    color: #2C1E1E;
+    border: #2C1E1E 0.125em solid;
+    border-radius: 0.25em;
+    box-shadow: inset 0 0 0.5em 0 #2C1E1E, 0 0 2em 0 #2C1E1E;
+    cursor: pointer;
+}
+
+
+      
+.Produits button:hover,
+.Produits button:focus {
+    color: #2C1E1E;
+    text-shadow: none;
+}
+
+.Produits button:hover::before,
+.Produits button::before {
+    opacity: 1;
+}
+.Produits button:hover::after,
+.Produits button:focus::after {
+    opacity: 1;
+}
+
+.Prix h5 {
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-family: fjalla one;
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+}
+
+.PrixMin {
+
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.PrixMin select {
+
+    margin-left: 1rem;
+}
+
+.PrixMax {
+
+    display: flex;
+    
+}
+
+.PrixMax select {
+
+    margin-left: 1rem;
+}
+
+.Note h5 {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: fjalla one;
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+}
+
+.NoteMin {
+
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.Note select {
+
+    margin-left: 1rem;
+}
+
+.NoteMax {
+
+    display: flex;
+}
+
+@media screen and (max-width:500px) {
+
+    .Produits {
+
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        width: 50%;
+        align-items: flex-start;
+        font-family: Raleway;
+       
+    }
+
+    
+    .Produits ul {
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        align-items: center;
+        margin-left: 0;
+        
+    }
+
+}

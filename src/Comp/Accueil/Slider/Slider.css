@@ -1,0 +1,28 @@
+* {
+
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.carousel{
+
+    position: relative;
+    height: 53rem;
+    z-index: -2;
+    
+}
+
+@media screen and (max-width:500px) {
+
+    .carousel {
+
+        height: 40rem;
+    }
+
+    .carousel img {
+
+        height: 40rem;
+    }
+}
